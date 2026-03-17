@@ -1,0 +1,14 @@
+# Non-sensitive runtime configuration shared by API/worker pods.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  APP_ENV: localdev
+  LOG_LEVEL: INFO
+  REDIS_URL: redis://redis:6379/0
+  REDIS_QUEUE_KEY: jobs:queue
+  POSTGRES_HOST: postgres
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: kubeserve
+  POSTGRES_USER: app

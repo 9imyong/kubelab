@@ -1,0 +1,7 @@
+# Dedicated namespace isolates all resources for easier cleanup and policy control.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kubeserve-lab
+  labels:
+    app.kubernetes.io/name: kubeserve-lab

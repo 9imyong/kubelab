@@ -1,0 +1,12 @@
+# Separate worker service simplifies Prometheus target discovery.
+apiVersion: v1
+kind: Service
+metadata:
+  name: worker-metrics
+spec:
+  selector:
+    app: worker
+  ports:
+    - name: metrics
+      port: 9100
+      targetPort: metrics

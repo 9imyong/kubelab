@@ -1,0 +1,25 @@
+# Base layer without Helm so beginners can read raw Kubernetes objects first.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: kubeserve-lab
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - secret.yaml
+  - deployment-gateway-api.yaml
+  - deployment-worker.yaml
+  - deployment-redis.yaml
+  - statefulset-postgres.yaml
+  - service-api.yaml
+  - service-redis.yaml
+  - service-postgres.yaml
+  - service-worker-metrics.yaml
+  - ingress-api.yaml
+  - hpa-gateway-api.yaml
+  - hpa-worker.yaml
+  - networkpolicy-default-deny.yaml
+  - networkpolicy-allow-dns.yaml
+  - networkpolicy-api.yaml
+  - networkpolicy-worker.yaml
+  - networkpolicy-redis.yaml
+  - networkpolicy-postgres.yaml

@@ -1,0 +1,12 @@
+# ClusterIP service fronts gateway-api pods.
+apiVersion: v1
+kind: Service
+metadata:
+  name: api
+spec:
+  selector:
+    app: gateway-api
+  ports:
+    - name: http
+      port: 8000
+      targetPort: http

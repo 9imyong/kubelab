@@ -1,0 +1,8 @@
+{
+  "title": "Kubeserve Lab Overview",
+  "uid": "kubeserve-overview",
+  "description": "Reference dashboard source file",
+  "schemaVersion": 39,
+  "version": 1,
+  "panels": []
+}
