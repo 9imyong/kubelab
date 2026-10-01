@@ -1,6 +1,8 @@
-# kubeserve-lab
+# kubelab
 
 kind 기반 Kubernetes 실습 프로젝트입니다.  
+
+리소스 이름과 네임스페이스는 `kubeserve-lab`을 씁니다.
 FastAPI API + Worker + Redis + Postgres + Prometheus + Grafana 구성을 통해 운영/장애/스케일링을 연습할 수 있습니다.
 
 ## 구성 요소
